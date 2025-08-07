@@ -6,7 +6,7 @@ Get notifications of new posts on reddit
 
 linux and windows version included
 
-linux version uses curl and sed, make sure you have them installed  
+linux version uses grep, curl and sed, make sure you have them installed  
 -add to crontab using: 
 crontab -e  
 to have it check every 2 minutes:  
