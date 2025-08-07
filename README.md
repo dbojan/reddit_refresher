@@ -22,5 +22,5 @@ it runs in a loop.
 
 ### Installation
 
-right click [here](https://raw.githubusercontent.com/dbojan/reddit_refresher/refs/heads/main/reddit_refresher.zip) to download  
+right click [here](https://raw.githubusercontent.com/dbojan/reddit_refresher/refs/heads/main/reddit_refresher.zip), select 'save link as' to download  
 uncompres...
