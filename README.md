@@ -18,8 +18,9 @@ it will post links to new posts in ntfs.sh/yourchannel_name
 
 windows version uses powershell  
 you can start it by clicking on bat  
-it runs in loop.
+it runs in a loop.
 
 ### Installation
 
-right click here to download.
+right click (here)[https://raw.githubusercontent.com/dbojan/reddit_refresher/refs/heads/main/reddit_refresher.zip] to download
+uncompres...
