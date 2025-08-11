@@ -1,6 +1,6 @@
 # reddit_refresher
 
-2025-08-07-1
+2025-08-11-1
 
 Get notifications of new posts on reddit
 
@@ -24,3 +24,13 @@ it runs in a loop.
 
 right click [here](https://raw.githubusercontent.com/dbojan/reddit_refresher/refs/heads/main/reddit_refresher.zip), select 'save link as' to download  
 uncompres...
+
+
+###
+
+changes:  
+
+2025-08-11-1  
+-reworked filters  
+-moved everything to one line
+
