@@ -80,7 +80,7 @@ ls (you should see 'r' here)
 cp r $HOME
 cd $HOME
 ls (you should see 'r' here)
-chmod 755 ./r
+chmod 755 r
 ls -al (you should see 'r' here, in green with rwx in front)
 ```
 #### running the script
