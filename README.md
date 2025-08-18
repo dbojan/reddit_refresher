@@ -29,20 +29,71 @@ uncompres...
 ### android
 
 you can also run it from phone, using termux:  
-pkg update  
-pkg install grep sed curl  
-remove # from below lines that say: remove this lines to have it running in loop.  
 
-you cann connect phone to laptop usb (make sure it charges when laptop is in suspend mode), or to phone charger, and have it connected to wifi.  
+#### make refresh.sh run in loop:  
+open 'refresh.sh' in notepad++, or notepad  
+remove # from lines: `#while true; do` and `#sleep 120; done`  
+so it looks like this:
 
-root phone  
-install cs explorer, in setting enable root  
-and copy r.sh to to /data/data/com.termux/files/home/  
+before:  
+```
+#remove to have it running in loop
+#while true; do
+...
 
-to make r.sh executable: chmod 755 ./r.sh  
-start by runninx termux, and typing ./r.sh, or rename it to r. Press enter. Turn screen off.  
+#remove to have it running in loop
+#sleep 120; done
+```
+after:  
+```
+#remove to have it running in loop
+while true; do
+...
 
-I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (50/80)  
+#remove to have it running in loop
+sleep 120; done
+```
+
+rename 'refresh.sh' to 'r'  
+
+#### install termux, cx explorer using 'files' app  
+update termux repository  
+after installed, in termux type:  
+`pkg update`  
+`pkg install grep sed curl`  
+
+#### allow termux to access phone file system
+type:  
+`termux-setup-storage`  
+( allow )  
+this fill allow to use folder '~/storage' which will point out to: 'dcim', 'downloads' etc ...  
+(this is not actuual root of android folder, if you create file 1.txt above folder 'dcim' termux won't see it)  
+using file manager like 'cx explorer', or 'files', copy file 'r' to folder 'dcim'  
+
+#### copy 'r' to $HOME in termux
+in termux type:
+```
+cd ~/storage
+ls (you should see dcim folder)
+cd dcim
+ls (you should see 'r' here)
+cp r $HOME
+cd $HOME
+ls (you should see 'r' here)
+chmod 755 ./r
+ls -al (you should see 'r' here, in green with rwx in front)
+```
+#### running the script
+`./r`  
+
+
+
+#### other
+I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
+
+getting to develeoper mode on nokia 5:  
+settings/system/about phone/build number, top repeatedly till get developer mode on  
+usb settings: enable ftp transfer
 
 
 ###
