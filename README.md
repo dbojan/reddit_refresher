@@ -86,9 +86,10 @@ ls -al (you should see 'r' here, in green with rwx in front)
 #### running the script
 `./r`  
 
-
+to stop the script, use: 'ctrl' 'z'
 
 #### other
+
 I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
 
 getting to develeoper mode on nokia 5:  
