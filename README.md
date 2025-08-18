@@ -108,3 +108,6 @@ changes:
 2025-08-16-1  
 -added optional loop for refresh.sh
 
+2025-08-18-1  
+-added date at the start of the (optional) loop
+
