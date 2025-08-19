@@ -96,7 +96,7 @@ to stop the script, use: 'ctrl' 'z'
 settings/system/about phone/build number, top repeatedly till get developer mode on  
 usb settings: enable ftp transfer
 
-- Accessing termux storage using file explorer ( from https://wiki.termux.com/wiki/Internal_and_external_storage):
+- Accessing termux storage using file explorer (from https://wiki.termux.com/wiki/Internal_and_external_storage):
   - https://github.com/zhanghai/MaterialFiles
   - https://play.google.com/store/apps/details?id=nextapp.fx
 
