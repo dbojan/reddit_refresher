@@ -88,18 +88,19 @@ ls -al (you should see 'r' here, in green with rwx in front)
 
 to stop the script, use: 'ctrl' 'z'
 
-#### other
+#### Android, more info
 
-I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
+- I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
 
-getting to develeoper mode on nokia 5:  
+- getting to develeoper mode on nokia 5:  
 settings/system/about phone/build number, top repeatedly till get developer mode on  
 usb settings: enable ftp transfer
 
+- Accessing termux storage using file explorer ( from https://wiki.termux.com/wiki/Internal_and_external_storage):
+  - https://github.com/zhanghai/MaterialFiles
+  - https://play.google.com/store/apps/details?id=nextapp.fx
 
-###
-
-changes:  
+### Changes:  
 
 2025-08-11-1  
 -reworked filters  
