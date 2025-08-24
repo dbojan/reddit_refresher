@@ -92,6 +92,8 @@ to stop the script, use: 'ctrl' 'z'
 
 - I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
 
+- You shold probably disable battery optimization for termux  
+
 - getting to develeoper mode on nokia 5:  
 settings/system/about phone/build number, top repeatedly till get developer mode on  
 usb settings: enable ftp transfer
