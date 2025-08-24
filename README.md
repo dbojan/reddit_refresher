@@ -1,6 +1,6 @@
 # reddit_refresher
 
-2025-08-18-1
+2025-08-24-1
 
 Get notifications of new posts on reddit
 
@@ -101,6 +101,9 @@ usb settings: enable ftp transfer
   - https://play.google.com/store/apps/details?id=nextapp.fx
 
 ### Changes:  
+
+2025-08-24-1  
+-more messages
 
 2025-08-11-1  
 -reworked filters  
