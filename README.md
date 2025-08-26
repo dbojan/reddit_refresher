@@ -84,23 +84,28 @@ chmod 755 r
 ls -al (you should see 'r' here, in green with rwx in front)
 ```
 #### running the script
-`./r`  
+
+run `termux-wake-lock` first, so the phone does not put script to sleep, and then run r:  
+```
+termux-wake-lock
+./r
+```  
 
 to stop the script, use: 'ctrl' 'z'
 
 #### Android, more info
 
-- I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
-
-- You shold probably disable battery optimization for termux  
-
-- getting to develeoper mode on nokia 5:  
-settings/system/about phone/build number, top repeatedly till get developer mode on  
-usb settings: enable ftp transfer
+- You shold allow termux to run in the background
 
 - Accessing termux storage using file explorer (from https://wiki.termux.com/wiki/Internal_and_external_storage):
   - https://github.com/zhanghai/MaterialFiles
   - https://play.google.com/store/apps/details?id=nextapp.fx
+
+- I also suggest installing and running 'battery charge limit' (requires root), since it is not good for li ion batter to be at 99% charge. Set it to (80/50)  
+
+- getting to develeoper mode on nokia 5:  
+settings/system/about phone/build number, tap repeatedly till get developer mode on  
+default usb settings: enable ftp transfer
 
 ### Changes:  
 
