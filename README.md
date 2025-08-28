@@ -1,6 +1,6 @@
 # reddit_refresher
 
-2025-08-24-2
+2025-08-28-1
 
 Get notifications of new posts on reddit
 
@@ -108,6 +108,9 @@ settings/system/about phone/build number, tap repeatedly till get developer mode
 default usb settings: enable ftp transfer
 
 ### Changes:  
+
+2025-08-28-1  
+-minor filter adjustment
 
 2025-08-24-2  
 -minor modifications, should not sleep on android.
