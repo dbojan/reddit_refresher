@@ -1,60 +1,36 @@
 # reddit_refresher
 
-2025-08-28-1
+2025-11-27-1
 
 Get notifications of new posts on reddit
 
-linux and windows version included
+linux and windows version included  
+windows version is deprecated
 
-linux version uses grep, curl and sed, make sure you have them installed  
--add to crontab using: 
-crontab -e  
-to have it check every 2 minutes:  
-` */2 * * * * /path_to_folder/reddit_refresher/refresh.sh `
+it runs in a loop.
 
-if you lower time, you might get temporary blocked.
+don't set update time to low, you might get temporary blocked.  
 it will post links to new posts in ntfs.sh/yourchannel_name
 
 
 windows version uses powershell  
 you can start it by clicking on bat  
-it runs in a loop.
+
 
 ### Installation
 
-right click [here](https://raw.githubusercontent.com/dbojan/reddit_refresher/refs/heads/main/reddit_refresher.zip), select 'save link as' to download  
-uncompres...
+download script, edit it and run
 
+set your xmpp accounts, and password  
+kuca-home account sender  
+dbojan-reciever on android device  
+
+you can also use xmpp-communicator (https://github.com/dbojan), which is conversations app with some added features.
 
 ### android
 
 you can also run it from phone, using termux:  
 
-#### make refresh.sh run in loop:  
-open 'refresh.sh' in notepad++, or notepad  
-remove # from lines: `#while true; do` and `#sleep 120; done`  
-so it looks like this:
-
-before:  
-```
-#remove to have it running in loop
-#while true; do
-...
-
-#remove to have it running in loop
-#sleep 120; done
-```
-after:  
-```
-#remove to have it running in loop
-while true; do
-...
-
-#remove to have it running in loop
-sleep 120; done
-```
-
-rename 'refresh.sh' to 'r'  
 
 #### install termux, cx explorer using 'files' app  
 update termux repository  
@@ -70,7 +46,7 @@ this fill allow to use folder '~/storage' which will point out to: 'dcim', 'down
 (this is not actuual root of android folder, if you create file 1.txt above folder 'dcim' termux won't see it)  
 using file manager like 'cx explorer', or 'files', copy file 'r' to folder 'dcim'  
 
-#### copy 'r' to $HOME in termux
+#### copy script (refresh.sh or r) to $HOME in termux
 in termux type:
 ```
 cd ~/storage
@@ -108,6 +84,9 @@ settings/system/about phone/build number, tap repeatedly till get developer mode
 default usb settings: enable ftp transfer
 
 ### Changes:  
+
+2025-11-27-1  
+-update linux version. win version is deprecated
 
 2025-08-28-1  
 -minor filter adjustment
